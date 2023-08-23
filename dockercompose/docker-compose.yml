@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+      webserver:
+            image: centos/httpd
+            ports:
+                - 8081:80
+            volumes:
+               - compose:/var/www/html    
+volumes:
+              compose:  

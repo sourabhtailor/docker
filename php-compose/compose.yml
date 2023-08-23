@@ -1,0 +1,11 @@
+version: "3"
+services:
+        php:
+          image: php:7.4-cli
+          ports:
+            - "8080:80"
+          volumes:        
+             - ./index.php:/app/index.php
+          working_dir: /app
+          command: ["php", "-s", "0.0.0.0.:80", "index.php"]   
+                      

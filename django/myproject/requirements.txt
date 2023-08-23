@@ -1,0 +1,4 @@
+Django==3.2.6
+django-bootstrap4==3.0.1
+django-debug-toolbar==3.2.1
+
